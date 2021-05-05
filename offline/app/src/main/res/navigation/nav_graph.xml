@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.offline.frontend.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_reward"
+        android:name="com.example.offline.frontend.RewardsFragment"
+        tools:layout="@layout/fragment_rewards">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_statistics"
+        android:name="com.example.offline.frontend.StatisticsFragment"
+        tools:layout="@layout/fragment_statistics">
+
+        <action
+            android:id="@+id/action_to_daily"
+            app:destination="@id/navigation_daily_statistics" />
+
+        <action
+            android:id="@+id/action_to_weekly_app_usage"
+            app:destination="@+id/navigation_app_usage_weekly" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_app_usage"
+        android:name="com.example.offline.frontend.AppUsageDailyFragment"
+        tools:layout="@layout/fragment_daily_overview"
+        >
+        <action
+            android:id="@+id/action_app_usage_to_daily"
+            app:destination="@id/navigation_daily_statistics" />
+        <action
+            android:id="@+id/action_app_usage_to_weekly"
+            app:destination="@id/navigation_statistics" />
+
+    </fragment>
+
+
+
+
+
+
+    <fragment
+        android:id="@+id/navigation_app_usage_weekly"
+        android:name="com.example.offline.frontend.AppUsageWeeklyFragment"
+        tools:layout="@layout/fragment_weekly_overview"
+        >
+        <action
+            android:id="@+id/action_app_usage_to_weekly"
+            app:destination="@id/navigation_statistics" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_weekly_statistics"
+        android:name="com.example.offline.frontend.WeeklyOverviewFragment"
+        tools:layout="@layout/fragment_weekly_overview">
+
+
+
+        <action
+            android:id="@+id/action_to_weekly_app_usage"
+            app:destination="@+id/navigation_app_usage_weekly" />
+    </fragment>
+
+
+
+
+
+
+    <fragment
+        android:id="@+id/navigation_daily_statistics"
+        android:name="com.example.offline.frontend.DailyOverviewFragment"
+        tools:layout="@layout/fragment_daily_overview">
+
+        <action
+            android:id="@+id/action_to_statistics"
+            app:destination="@id/navigation_statistics" />
+
+        <action
+            android:id="@+id/action_to_app_usage"
+            app:destination="@+id/navigation_app_usage" />
+    </fragment>
+
+</navigation>

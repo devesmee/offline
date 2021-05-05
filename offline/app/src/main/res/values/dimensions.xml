@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GENERAL -->
+    <dimen name="space_large">16dp</dimen>
+    <dimen name="first_card_top_space">90dp</dimen>
+    <dimen name="button_top_space">20dp</dimen>
+    <dimen name="full_card_bottom_space">32dp</dimen>
+    <dimen name="card_content_top_bottom_space">11dp</dimen>
+    <dimen name="word_spacing">3dp</dimen>
+    <dimen name="height_setup_card">600dp</dimen>
+
+    <!-- TOOLBAR -->
+    <dimen name="toolbar_calendar_image_button_size">35dp</dimen>
+
+    <!-- HOME SCREEN -->
+    <dimen name="home_goal_space">5dp</dimen>
+    <dimen name="toolbar_button_left_space">150dp</dimen>
+    <dimen name="home_information_width">175dp</dimen>
+    <dimen name="home_emoji_size">100dp</dimen>
+    <dimen name="emoji_side_space">24dp</dimen>
+
+    <!-- REWARDS SCREEN -->
+    <dimen name="rewards_gridview_space">20dp</dimen>
+    <dimen name="rewards_content_space">10dp</dimen>
+
+    <!-- SET GOAL SCREEN -->
+    <dimen name="set_goal_space">30dp</dimen>
+    <dimen name="set_goal_margin_horizontal">75dp</dimen>
+
+    <!-- WHITELISTED APPS SCREEN -->
+    <dimen name="recycler_view_height">400dp</dimen>
+
+    <!-- PRESENT DIALOGS -->
+    <dimen name="dialog_margin_horizontal_small">30dp</dimen>
+    <dimen name="dialog_margin_horizontal_large">60dp</dimen>
+    <dimen name="dialog_button_margin_top">4dp</dimen>
+    <dimen name="dialog_title_margin_top">9dp</dimen>
+
+    <!-- WEEKLY OVERVIEW SCREEN -->
+    <dimen name="weekly_statistics_gridview_space">80dp</dimen>
+    <dimen name="weekly_statistics_pie_chart">70dp</dimen>
+    <dimen name="weekly_statistics_first_card_top_space">97dp</dimen>
+
+    <!-- MONTHLY OVERVIEW SCREEN -->
+    <dimen name="day_header_spacing">30dp</dimen>
+
+    <!-- DAILY OVERVIEW SCREEN -->
+    <dimen name="space_bottom_final_card">90dp</dimen>
+
+    <!-- CARD DAILY PRODUCTIVITY FEELING -->
+    <dimen name="productivity_emoji_size">100dp</dimen>
+
+    <!-- CARD DAILY TOP APPS USAGE -->
+    <dimen name="pie_chart_bubble">50dp</dimen>
+    <dimen name="pie_chart_height">190dp</dimen>
+    <dimen name="pie_chart_logo">50dp</dimen>
+
+    <!-- SPLASH SCREEN ICON -->
+    <dimen name="splash_icon_size">500dp</dimen>
+
+    <dimen name="app_usage_start_dimension">40dp</dimen>
+
+</resources>

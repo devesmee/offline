@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_revealed_sticker"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/space_large"
+        android:src="@color/ic_launcher_background"
+        android:contentDescription="@string/sticker_image_default_placeholder"/>
+
+    <TextView
+        android:id="@+id/tv_revealed_sticker_name"
+        style="@style/Text_Title"
+        android:layout_marginTop="@dimen/dialog_title_margin_top"
+        android:text="@string/sticker_name_default_placeholder"
+        android:layout_marginHorizontal="@dimen/dialog_margin_horizontal_small"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_revealed_sticker_meme"
+        style="@style/Text_Subtitle"
+        android:text="@string/sticker_meme_default_placeholder"
+        android:layout_marginHorizontal="@dimen/dialog_margin_horizontal_large"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/space_large"/>
+
+    <Button
+        android:id="@+id/btn_print"
+        style="@style/Button_Small"
+        android:text="@string/print_sticker_btn"
+        />
+
+    <Button
+        android:id="@+id/btn_request_tshirt"
+        style="@style/Button_Small"
+        android:text="@string/request_tshirt_sticker_btn"
+        android:layout_marginBottom="@dimen/space_large"
+        />
+
+</LinearLayout>

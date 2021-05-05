@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rewardsSticker"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:src="@null" />
+    <TextView
+        android:id="@+id/stickerProgress"
+        style="@style/Text_Paragraph"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/rewards_content_space"
+        android:layout_below="@id/img"
+        />
+    <TextView
+        android:id="@+id/stickerCondition"
+        style="@style/Text_Paragraph"
+        android:layout_centerHorizontal="true"
+        android:text="@string/rewards_condition"
+        android:layout_below="@id/stickerProgress"
+        />
+</RelativeLayout>

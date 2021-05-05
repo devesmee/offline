@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weeklyCircles"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/weeklyGoalProgressCircle"
+        android:layout_width="@dimen/weekly_statistics_pie_chart"
+        android:layout_height="@dimen/weekly_statistics_pie_chart"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

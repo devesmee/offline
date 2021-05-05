@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CardProductivityFeeling"
+    style="@style/Card"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/button_top_space"
+    android:layout_marginBottom="@dimen/space_large">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ProductivityFeelingTitle"
+            style="@style/Text_Paragraph_Big"
+            android:layout_marginTop="@dimen/space_large"
+            android:gravity="center_horizontal"
+            android:text="@string/productivity_feeling_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ProductivityFeelingEmoji"
+            android:layout_width="@dimen/productivity_emoji_size"
+            android:layout_height="@dimen/productivity_emoji_size"
+            android:src="@drawable/neutral"
+            android:layout_marginTop="@dimen/space_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ProductivityFeelingTitle"/>
+
+        <TextView
+            android:id="@+id/ProductivityFeelingAverage"
+            style="@style/Text_Subtitle_Bold"
+            android:layout_marginStart="@dimen/home_goal_space"
+            android:text="@string/productivity_feeling_neutral"
+            android:layout_marginTop="@dimen/space_large"
+            android:layout_marginBottom="@dimen/space_large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ProductivityFeelingEmoji"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

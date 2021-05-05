@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">offline</string>
+
+    <!-- FOREGROUND SERVICE -->
+    <string name="activity_tracking_channel">ACTIVITY_TRACKING_CHANNEL</string>
+    <string name="activity_tracking_channel_description">The notification channel for displaying that the application is tracking the user\'s phone usage</string>
+    <string name="activity_notification_title">Tracking</string>
+    <string name="activity_notification_message">Currently tracking your phone usage</string>
+    <string name="activity_notification_ticker">Tracking your phone usage</string>
+
+    <!-- PRESENT DIALOG -->
+    <string name="unwrap_present">Unwrap your present!</string>
+    <string name="unwrap_present_btn">Get present</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="claim_sticker_btn">Claim Sticker</string>
+    <string name="print_sticker_btn">Print</string>
+    <string name="request_tshirt_sticker_btn">Request T-Shirt</string>
+    <string name="sticker_name_default_placeholder">Sticker name</string>
+    <string name="sticker_meme_default_placeholder">Sticker meme</string>
+    <string name="sticker_image_default_placeholder">Sticker image</string>
+
+    <!-- SET GOAL SCREEN -->
+    <string name="set_goal_title">Set your goal</string>
+    <string name="set_goal_instruction">What percentage would you like to stay off-screen during your time at school?</string>
+    <string name="set_goal_hardcoded">50%</string>
+    <string name="set_goal_info_hardcoded">On an average day of 8 hours, 50% is 4 hours 0 minutes staying off your phone</string>
+    <string name="set_goal_notification">This can be adjusted in the settings at any moment</string>
+    <string name="set_goal_button">Save goal</string>
+
+    <!-- REWARDS SCREEN -->
+    <string name="fragment_rewards_title">Rewards</string>
+    <string name="rewards_condition">daily goal</string>
+    <string name="goals_completed">Goals completed:</string>
+
+    <!--- HOME SCREEN -->
+    <string name="home_title">Home</string>
+    <string name="home_set_goal">Set goal:</string>
+    <string name="home_hardcoded_goal">50%</string>
+    <string name="home_hardcoded_time_info">You were off screen for 0h out of 3h spent on campus</string>
+    <string name="home_on_track_progress">So far so good!</string>
+    <string name="home_off_track_progress">You can do it!</string>
+    <string name="home_goal_completed">Good job!</string>
+    <string name="enter_campus_button">Enter campus</string>
+    <string name="leave_campus_button">Leave campus</string>
+    <string name="home_productivity_feeling_title">Productivity Feeling</string>
+    <string name="home_productivity_feeling_average_info_hardcoded">Your average productivity feeling this week is</string>
+    <string name="home_productivity_feeling_average_happy">happy</string>
+    <string name="home_productivity_feeling_average_neutral">neutral</string>
+    <string name="home_productivity_feeling_average_sad">sad</string>
+    <string name="home_productivity_feeling_input">Select your productivity feeling for today</string>
+
+    <!-- MONTHLY OVERVIEW SCREEN -->
+    <string name="monthly_overview_title">Monthly Overview</string>
+    <string name="monthly_overview_day_monday">M</string>
+    <string name="monthly_overview_day_tuesday">T</string>
+    <string name="monthly_overview_day_wednesday">W</string>
+    <string name="monthly_overview_day_thursday">T</string>
+    <string name="fragment_app_overview">App overview</string>
+    <string name="app_usage_time_placeholder">0h 00m</string>
+    <string name="app_usage_name_placeholder">app name</string>
+    <string name="app_usage_title">All apps usage</string>
+    <string name="monthly_overview_day_friday">F</string>
+
+    <!-- WEEKLY OVERVIEW SCREEN -->
+    <string name="weekly_overview_title">Week 10</string>
+    <string name="weekly_overview_subtitle">9 - 13 November 2020</string>
+    <string name="weekly_overview_day_monday">M</string>
+    <string name="weekly_overview_day_tuesday">T</string>
+    <string name="weekly_overview_day_wednesday">W</string>
+    <string name="weekly_overview_day_thursday">T</string>
+    <string name="weekly_overview_day_friday">F</string>
+    <string name="weekly_goals_overview_text">Achieved 10 hours off screen out of 40 total hours on campus</string>
+
+    <!-- DAILY OVERVIEW SCREEN -->
+    <string name="daily_overview_title">6 January 2021</string>
+
+    <!-- DAILY GOAL PROGRESS -->
+    <string name="daily_goal_progress_title">Goal progress</string>
+    <string name="daily_goal_status_acheived">Goal achieved!</string>
+    <string name="daily_goal_status_not_acheived">Goal not achieved!</string>
+
+    <!-- CARD DAILY PRODUCTIVITY FEELING -->
+    <string name="daily_statistics_date_hardcoded">16 December 2020</string>
+    <string name="productivity_feeling_title">Productivity Feeling</string>
+    <string name="productivity_feeling_happy">Happy</string>
+    <string name="productivity_feeling_neutral">Neutral</string>
+    <string name="productivity_feeling_sad">Sad</string>
+
+    <!-- CARD DAILY TOP APPS USAGE -->
+    <string name="top_app_usage_title">Top used apps</string>
+    <string name="button_see_all">See All</string>
+
+    <!-- CARD DAILY NR UNLOCKS-->
+    <string name="number_of_unlocks_title">Screen unlocks</string>
+    <string name="number_of_unlocks_info_1">You unlocked your phone</string>
+    <string name="number_of_unlocks_value_hardcoded">5</string>
+    <string name="number_of_unlocks_times">time(s)</string>
+    <string name="number_of_unlocks_info_2">during</string>
+    <string name="number_of_unlocks_time_campus_harcoded">3</string>
+    <string name="number_of_unlocks_time_campus_minutes">minutes</string>
+    <string name="number_of_unlocks_info_3">spent on campus</string>
+
+    <!-- WEEKLY NR UNLOCKS SCREEN -->
+    <string name="number_of_unlocks">Number of unlocks</string>
+    <string name="total_unlocks">Total: </string>
+    <string name="frequency_unlocks">Frequency: Once every </string>
+    <string name="minutes"> minutes</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    WHITELISTED APPS SCREEN-->
+    <string name="whitelist_apps">Whitelist apps</string>
+    <string name="whitelist_explanation">From the list below, select which applications you would like to receive notifications from while on campus</string>
+    <string name="whitelist_settings_explanation">This can be adjusted in the settings at any moment</string>
+    <string name="set_whitelisted_apps">Set whitelisted apps</string>
+    <string name="get_started_button">Get started</string>
+    <string name="get_started_onboarding">Get Started</string>
+
+</resources>

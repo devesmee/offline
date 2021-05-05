@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rewardsSticker"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@color/white"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/appUsageContentIMG"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="Image of app icon"
+        android:scaleType="fitStart"
+        android:layout_gravity="center_horizontal"
+        android:src="@null"
+        android:layout_weight="0.3"/>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:id="@+id/appUsageName"
+        style="@style/Text_Paragraph"
+        android:text="@string/app_usage_name_placeholder"
+        android:layout_weight="0.3"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/appUsageTime"
+        android:layout_width="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        style="@style/Text_Paragraph"
+        android:text="@string/app_usage_time_placeholder"
+        android:layout_weight="0.3"/>
+</LinearLayout>

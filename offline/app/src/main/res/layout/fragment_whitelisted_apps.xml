@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/CardWhiteListedApps"
+        style="@style/Card"
+        android:layout_height="@dimen/height_setup_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/first_card_top_space">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="@dimen/space_large">
+
+            <TextView
+                android:id="@+id/whiteListAppsText"
+                style="@style/Text_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/whitelist_apps"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/whiteListExplanationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/whitelist_explanation"
+                style="@style/Text_Paragraph"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whiteListAppsText"
+                android:textAlignment="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/whiteListRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/recycler_view_height"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whiteListExplanationText"
+                app:layoutManager="LinearLayoutManager" />
+
+            <TextView
+                android:id="@+id/whiteListSettingsExplanationText"
+                style="@style/Text_Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_large"
+                android:text="@string/whitelist_settings_explanation"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whiteListRecyclerView"
+                app:layout_constraintBottom_toTopOf="@+id/btn_set_whitelisted_apps"/>
+
+            <Button
+                android:id="@+id/btn_set_whitelisted_apps"
+                style="@style/Button_Small"
+                android:text="@string/set_whitelisted_apps"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whiteListSettingsExplanationText"
+                android:layout_marginBottom="@dimen/set_goal_space" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

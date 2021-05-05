@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titleAppUsageFragment"
+            style="@style/Text_Top_Bar"
+            android:layout_marginStart="@dimen/space_large"
+            android:text="@string/app_usage_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/appUsageBackButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/appUsageBackButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back_button"
+            tools:layout_editor_absoluteY="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/appUsageCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/Card"
+        android:layout_marginTop="@dimen/first_card_top_space"
+        android:layout_marginBottom="@dimen/space_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/appUsageCardTitle"
+                style="@style/Text_Paragraph_Big"
+                android:text="@string/app_usage_title"
+                android:elevation="2dp"
+                android:layout_marginStart="@dimen/space_large"
+                android:layout_marginTop="@dimen/space_large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <GridView
+                android:id="@+id/appsUsageGridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="1"
+                android:scrollbars="none"
+                android:smoothScrollbar="false"
+                android:overScrollMode="never"
+                android:stretchMode="columnWidth"
+                android:paddingStart="40dp"
+                android:verticalSpacing="@dimen/space_large"
+                android:layout_marginHorizontal="@dimen/space_large"
+                android:layout_marginTop="@dimen/space_large"
+                android:layout_marginBottom="@dimen/space_large"
+                app:layout_constraintTop_toBottomOf="@+id/appUsageCardTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

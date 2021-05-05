@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topAppUsageCard"
+    style="@style/Card"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/button_top_space"
+    android:layout_marginBottom="@dimen/space_large">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/TopAppsUsageTitle"
+            style="@style/Text_Paragraph_Big"
+            android:layout_marginTop="@dimen/space_large"
+            android:gravity="center_horizontal"
+            android:text="@string/top_app_usage_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/topAppUsageChart"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/space_large"
+            android:layout_marginBottom="@dimen/space_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/topAppUsageBubble"
+            android:visibility="gone"
+            android:layout_width="@dimen/pie_chart_bubble"
+            android:layout_height="@dimen/pie_chart_bubble"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_app_bubble"
+            app:layout_constraintBottom_toBottomOf="@+id/topAppUsageChart"
+            app:layout_constraintEnd_toEndOf="@+id/topAppUsageChart"
+            app:layout_constraintStart_toStartOf="@+id/topAppUsageChart"
+            app:layout_constraintTop_toTopOf="@+id/topAppUsageChart" />
+
+        <ImageView
+            android:id="@+id/topAppUsageLogo"
+            android:layout_width="@dimen/pie_chart_logo"
+            android:layout_height="@dimen/pie_chart_logo"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toBottomOf="@+id/topAppUsageBubble"
+            app:layout_constraintEnd_toEndOf="@+id/topAppUsageBubble"
+            app:layout_constraintStart_toStartOf="@+id/topAppUsageBubble"
+            app:layout_constraintTop_toTopOf="@+id/topAppUsageBubble"/>
+<!--            app:srcCompat="@drawable/ic_android_black_24dp" -->
+
+        <Button
+            style="@style/Button_Extra_Small"
+            android:visibility="gone"
+            android:id="@+id/seeAllBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/button_see_all"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topAppUsageChart" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

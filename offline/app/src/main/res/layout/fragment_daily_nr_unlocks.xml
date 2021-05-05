@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CardNumberofUnlocks"
+    style="@style/Card"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/button_top_space"
+    android:layout_marginBottom="@dimen/space_large">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/NumberofUnlocksTitle"
+            style="@style/Text_Paragraph_Big"
+            android:layout_marginTop="@dimen/space_large"
+            android:gravity="center_horizontal"
+            android:text="@string/number_of_unlocks_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/NumberofUnlocksInfo1"
+            style="@style/Text_Subtitle"
+            android:text="@string/number_of_unlocks_info_1"
+            android:layout_marginTop="@dimen/space_large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/NumberofUnlocksTitle"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutNumberofUnlocksValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/NumberofUnlocksInfo1">
+
+            <TextView
+                android:id="@+id/NumberofUnlocksValue"
+                style="@style/Text_Number_of_Unlocks"
+                android:text="@string/number_of_unlocks_value_hardcoded"
+                app:layout_constraintStart_toStartOf="@id/LayoutNumberofUnlocksValue"
+                app:layout_constraintBottom_toBottomOf="@id/LayoutNumberofUnlocksValue"/>
+
+            <TextView
+                android:id="@+id/NumberofUnlocksTimes"
+                style="@style/Text_Subtitle"
+                android:text="@string/number_of_unlocks_times"
+                android:layout_marginStart="@dimen/home_goal_space"
+                android:layout_marginBottom="@dimen/space_large"
+                app:layout_constraintStart_toEndOf="@id/NumberofUnlocksValue"
+                app:layout_constraintBottom_toBottomOf="@id/NumberofUnlocksValue"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutNumberofUnlocksInfo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LayoutNumberofUnlocksValue"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/NumberofUnlocksInfo2"
+                style="@style/Text_Subtitle"
+                android:text="@string/number_of_unlocks_info_2"
+                app:layout_constraintStart_toStartOf="@id/LayoutNumberofUnlocksInfo2"
+                app:layout_constraintBottom_toBottomOf="@id/LayoutNumberofUnlocksInfo2"/>
+
+            <TextView
+                android:id="@+id/NumberofUnlocksHoursOnCampus"
+                style="@style/Text_Subtitle"
+                android:text="@string/number_of_unlocks_time_campus_harcoded"
+                android:layout_marginStart="@dimen/word_spacing"
+                app:layout_constraintStart_toEndOf="@id/NumberofUnlocksInfo2"
+                app:layout_constraintBottom_toBottomOf="@id/LayoutNumberofUnlocksInfo2"/>
+
+            <TextView
+                android:id="@+id/NumberofUnlocksInfo3"
+                style="@style/Text_Subtitle"
+                android:text="@string/number_of_unlocks_info_3"
+                android:layout_marginStart="@dimen/word_spacing"
+                app:layout_constraintStart_toEndOf="@id/NumberofUnlocksHoursOnCampus"
+                app:layout_constraintBottom_toBottomOf="@id/LayoutNumberofUnlocksInfo2"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
