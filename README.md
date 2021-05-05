@@ -1,5 +1,5 @@
 # Offline
-Android application (Java) - developed by 10 students - that helps Fontys students to reduce their screentime while at school in an insightful and rewarding way.
+Android application (Java) - developed by 11 students - that helps Fontys students to reduce their screentime while at school in an insightful and rewarding way.
 
 **On campus only**
 
